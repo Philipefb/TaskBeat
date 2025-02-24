@@ -58,7 +58,7 @@ class CreateTaskBottomSheet(
             tieTaskName.setText(task.name)
 
             val currentCategory = categoryList.first { it.name == task.category }
-            spinner.setSelection(categoryList.indexOf(currentCategory))
+            spinner.setSelection(categoryList.indexOf(currentCategory) + 1)
         }
 
         btnCreateUpdate.setOnClickListener {
